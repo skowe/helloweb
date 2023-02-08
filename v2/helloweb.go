@@ -26,7 +26,9 @@ func main() {
 	if !ok {
 		port = "8080"
 	}
-
+	// Ispisi "Hello tty!" na standardnom izlazu
+	fmt.Println("Hello TTY!")
+	
 	// Dodaj putanju u defoltnom ServeMux objektu funkciji SayHelloHandleFunction
 	http.HandleFunc("/", SayHelloHandleFunction)
 
